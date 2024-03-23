@@ -10,11 +10,21 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="iconheader__theme-menu" href="images/favicon.ico" sizes="any" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
-      <nav class="theme-menu header__theme-menu">
+      <div class="header__grid-firstrow"></div>
+      <div class="header__main-heading">
+        
+       <h1 class="header__title">&lt;/html&gt;</h1>
+       <h2 class="header__subtitle">закрывающий тег</h2>
+      </div>
+      <nav class="header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
@@ -40,7 +50,19 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="content-section">
+        <h2 class="content-section__title">Фритрек и нулевой спринт: <span class="content-section__title-stroke">Подготовка к работе</span></h2>
+        <div>
+        <div class="content-section__picture-atribute"> &lt;/HTML&gt; </div>
+        <img class="content-section__image" src="./images/car1.jpg" alt="picture of car in bright colors">
+        </div>
+        <p1 class="content-section__text text_width_large">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p1>
+        <p2 class="content-section__text text_width_large">Место для ваших воспоминаний о начале обучения.</p2>
+        <button class="content-section__button"
+        type="button" data-theme="light" class="theme-menu__button"></button>
+      </section>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

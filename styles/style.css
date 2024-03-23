@@ -1,20 +1,170 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-
-*/
-
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
-}
+    margin: auto;
+    min-inline-size: 320px;
+    min-block-size: 100dvb;
+    font-family: var(--main-font);
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    
+  
+    
+  }
+  
+  .header{
+    
+    margin-block:100px ;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    border: solid 2px var(--main-text-color);
+    background-color: var(--main-bg-color);
+    width: 100vw;
+    justify-self: center;
+    height: auto;
+    min-width: 320px;
+    
+    
+
+  }
+  .header__main-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+  
+  }
+  .header__title{
+    text-transform: uppercase;
+    font-family: var(--header-font),sans-serif;
+    font-size: 49px;
+    font-weight:var(--header-wdth) ;
+    color: var(--main-text-color);
+  }
+  .header__subtitle{
+    text-transform: uppercase;
+    font-family: var(--header-font),sans-serif;
+    font-size: 14px;
+    font-weight:var(--header-wdth) ;
+    color: var(--main-text-color);
+  }
+  
+  .header__theme-menu{
+    margin-block-start: 25px;
+    margin-block-end: 24px;
+  display: block;
+  align-self: center;
+  justify-self: center;
+  margin-inline-start: 21px;
+  
+  
+  }
+   
+  .theme-menu__list{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    align-items: flex-start;
+    
+   
+  }
+  .theme-menu__item{
+    line-height: 14px;
+    
+  }
+  .theme-menu__button{
+    border: none;
+    box-shadow: none;
+    color: var(--main-text-color);
+    font-family: var(--header-font),'Monospace',sans-serif;
+    font-size: var(--headertext-font-size);
+    text-transform: uppercase;
+    background-color: transparent;
+    list-style-type: none;
+    appearance: none;
+    cursor: pointer;
+    padding-block: 0px;
+    padding-inline: 0px;
+  }
+  
+  
+  
+  .content-section{
+    
+   display: flex;
+   flex-direction: column;
+   border: solid 2px var(--main-text-color);
+   max-width: 700px;
+   box-sizing: border-box; 
+ 
+  }
+  
+  .content-section__title{
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+   line-height:  21.78px;
+   padding-block-start: 4px;
+   padding-block-end: 4px;
+   padding-inline-start: 10px;
+   width: var(--wdth-bold);
+   
+    
+  }
+  .content-section__title-stroke{
+    display: block;
+  }
+  .content-section__picture-atribute{
+    position: absolute;
+  }
+  
+  .content-section__image{
+    display: block;
+    position: relative;
+    width: calc(100% + 4px);
+    height: auto;
+    max-height: 100%;
+  }
+  
+  
+  .content-section__text{
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    margin-inline-start: 25px;
+    margin-inline-end: 28px;
+    margin-block-start: 25px;
+    margin-block-end: 10px;
+    display: block;
+  }
+  .content-section__button
+  
+  
+  @media (width > 375px){
+    .page {
+      min-inline-size: 375px;
+     
+    }
+    
+    .header{
+      max-width: 700px;
+      max-height: 368px;
+      
+    }
+    .header__title{
+      font-size:clamp(49px, 10vw, 65px);
+    }
+    .header__subtitle{
+      font-size: clamp(14px, 3vw, 23px);
+    }
+  
+    .header__grid-firstrow{
+      height: clamp(120px,20vw, 136px);
+    }
+  
+    .content-section__title-stroke{
+      display: inline;
+    }
+  }

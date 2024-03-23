@@ -1,1 +1,17 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root{
+  --main-font:  'Inter-Variable';
+  --header-font:'PressStart2P';
+   --hover: #D9D9D9;
+  --main-text-color:  #000000 ;
+  --main-bg-color: #FFFFFF;
+  --header-wdth: 400;
+  --headertext-font-size: 14px;
+  --font-size:18px;
+  --wdth: 400;
+  --wdth-bold: 700;
+  --like:#FF0000;
+  --font-size:18px;
+}
+
+
+
