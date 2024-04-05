@@ -214,7 +214,7 @@
   filter: saturate(130%);
 }
 .filter__image-three {
-
+  filter: sepia(1) contrast(2) brightness(120%);
 }
 .filter__image-four {
   filter: contrast(20%);
