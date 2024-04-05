@@ -4,6 +4,7 @@
    --hover: #D9D9D9;
   --main-text-color:  #000000 ;
   --main-bg-color: #FFFFFF;
+  --hover-button: #FFFFFF;
   --header-wdth: 400;
   --headertext-font-size: 14px;
   --font-size:18px;
@@ -11,6 +12,19 @@
   --wdth-bold: 700;
   --like:#FF0000;
   --font-size:18px;
+  --stroke-color: #FFFFFF;
+  --background-gradient:  
+  repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px,  transparent 2px,transparent 4px ),
+  repeating-linear-gradient(180deg,  #d3d3d3 0px, #d3d3d3 2px,  transparent 2px,transparent 4px),
+  linear-gradient(
+    #e7e7e7 0,01% ,
+    #e7e7e7,
+   #1a1a1a);
+  background-size: cover;
+  --focus:rgb(0 0 0 /0.6);
+  --path-color:#000000 ;
+  --name:#000000;
+
 }
 
 

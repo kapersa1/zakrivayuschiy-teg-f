@@ -10,14 +10,22 @@
     --header-font:'PressStart2P', 'Monospace', sans-serif;
     --main-text-color: #00CC14;
     --main-bg-color: #000000;
+    --hover-button:#00CC14;
+    --name:#00CC14;
     --header-wdth: 400;
     --headertext-font-size: 14px;
     --wdth: 465;
     --wdth-bold: 785;
     --like:#FF0000;
-    --hover: rgba(0, 204, 20, 0.6);
+    --focus: rgba(0, 204, 20, 0.6);
     --font-size:18px;
-      
+    --stroke-color:#000000;
+    --background-gradient:  
+  repeating-linear-gradient(90deg, #000 0px, #000 2px,  transparent 2px,transparent 4px ),
+  repeating-linear-gradient(180deg,  #000 0px, #000 2px,  transparent 2px,transparent 4px),
+  linear-gradient(#007f0c, #004306);
+  background-size: cover;
+  --path-color: #00CC14;
     }
   
   
@@ -28,13 +36,22 @@
         --header-font:'PressStart2P', 'Monospace', sans-serif;
         --main-text-color: #00CC14;
         --main-bg-color: #000000;
+        --hover-button:#00CC14;
+        --name:#00CC14;
         --header-wdth: 400;
         --headertext-font-size: 14px;
         --wdth: 465;
         --wdth-bold: 785;
         --like:#FF0000;
-        --hover: rgba(0, 204, 20, 0.6);
+        --focus: rgba(0, 204, 20, 0.6);
         --font-size:18px;
+        --stroke-color:#000000;
+        --background-gradient:  
+        repeating-linear-gradient(90deg, #000 0px, #000 2px,  transparent 2px,transparent 4px ),
+        repeating-linear-gradient(180deg,  #000 0px, #000 2px,  transparent 2px,transparent 4px),
+        linear-gradient(#007f0c, #004306);
+        background-size: cover;
+        --path-color: #00CC14;
     }
   }
   
@@ -45,12 +62,23 @@
        --hover: #D9D9D9;
       --main-text-color:  #000000 ;
       --main-bg-color: #FFFFFF;
+      --hover-button: #FFFFFF;
       --header-wdth: 400;
       --headertext-font-size: 14px;
       --wdth: 400;
       --like:#FF0000;
       --font-size:18px;
       --wdth-bold: 700;
+      --stroke-color: #FFFFFF;
+      --background-gradient:   repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px,  transparent 2px,transparent 4px ),
+      repeating-linear-gradient(180deg,  #d3d3d3 0px, #d3d3d3 2px,  transparent 2px,transparent 4px),
+      linear-gradient(  #e7e7e7 0,01% ,
+      #e7e7e7,
+     #1a1a1a);
+      background-size: cover;
+      --focus:rgb(0 0 0 /0.6);
+      --path-color:#000000 ;
+      --name:#000000;
     }
      
     @media (prefers-color-scheme: light) {
@@ -61,12 +89,22 @@
           --hover: #D9D9D9;
           --main-text-color:  #000000 ;
           --main-bg-color: #FFFFFF;
+          --hover-button: #FFFFFF;
           --subtitle-font-size: 23px;
           --headertext-font-size: 14px;
           --wdth: 400;
           --like:#FF0000;
           --font-size:18px;
           --wdth-bold: 700;
-  
+          --stroke-color: #FFFFFF;
+          --background-gradient:    repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px,  transparent 2px,transparent 4px ),
+          repeating-linear-gradient(180deg,  #d3d3d3 0px, #d3d3d3 2px,  transparent 2px,transparent 4px),
+          linear-gradient(  #e7e7e7 0,01% ,
+          #e7e7e7,
+         #1a1a1a);
+          background-size: cover;
+          --focus:rgb(0 0 0 /0.6);
+          --path-color:#000000 ;
+          --name:#000000;
       }
   }
