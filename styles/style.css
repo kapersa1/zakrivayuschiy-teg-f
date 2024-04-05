@@ -181,9 +181,11 @@
   right: 0;
 }
 
-@supports (-webkit-text-stroke: 1px var(--stroke-color)) {
+@supports ((text-stroke: 1px var(--stroke-color)) or (-webkit-text-stroke: 1px var(--stroke-color))) {
   .content-section__picture-atribute {
     -webkit-text-stroke: 1px var(--stroke-color);
+    text-stroke: 1px var(--stroke-color);
+    text-shadow: none;
   }
 }
 
@@ -198,7 +200,31 @@
   border-left: solid 2px var(--main-text-color);
   border-right: solid 2px var(--main-text-color);
 }
+.image__artibute{
+  position: relative;
+  z-index: 0;
+}
+.filter__image-one{
+  filter: hue-rotate(-90deg);
+}
+.filter__image-two{
+  filter: saturate(130%);
+}
+.filter__image-three{
 
+}
+.filter__image-four{
+  filter: contrast(20%);
+}
+.filter__image-five{
+  filter: brightness(200%);
+}
+.filter__image-six{
+  filter: grayscale(0.8);
+}
+.filter__image-seven{
+  filter: sepia(20%);
+}
 .content-section__text {
   font-family: var(--main-font);
   font-size: var(--font-size);
@@ -336,9 +362,9 @@
   z-index: 1;
 }
 
-.floppy1 {
-  width: 28px;
-  height: auto;
+.floppy-image {
+  inline-size:28px;
+  block-size: 28px;
   display: block;
   color: var(--hover-button);
   z-index: 3;
@@ -495,9 +521,9 @@ dialog::backdrop {
   color: var(--main-text-color);
   text-transform: uppercase;
 }
-.floppy1-dialog {
-  width: 40px;
-  height: auto;
+.dialog-image {
+  inline-size: 39px;
+  block-size: 39px;
   color: var(--main-text-color);
 }
 
@@ -538,9 +564,9 @@ dialog::backdrop {
     margin-block-start: 15px;
   }
 
-  .floppy1 {
-    width: 21px;
-    height: auto;
+  .floppy-image {
+    inline-size:21px;
+    block-size: 21px;
   }
   .card__save-button {
     padding-block: 16px;
@@ -560,13 +586,14 @@ dialog::backdrop {
   }
   .dialog__content {
     padding-inline: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .dialog__ok-button {
     width: 293px;
     height: 38px;
   }
-  .dialog__content {
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+
+
+
 }

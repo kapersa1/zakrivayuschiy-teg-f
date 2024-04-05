@@ -83,7 +83,7 @@
      
     @media (prefers-color-scheme: light) {
   
-      :root{
+      :root {
           --main-font:  'Inter-Variable', 'Monospace', sans-serif ;
           --header-font:'PressStart2P';
           --hover: #D9D9D9;
