@@ -456,7 +456,6 @@
   text-transform: uppercase;
   overflow: hidden;
   z-index: 2;
-  list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -544,7 +543,7 @@
   .dialog__content {
     padding-inline: 30px;
   }
-  
+
   .dialog__ok-button {
     width: 293px;
     height: 38px;
