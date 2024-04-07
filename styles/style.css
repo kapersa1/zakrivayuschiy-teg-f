@@ -246,6 +246,7 @@
 .content-section__text {
   font-family: var(--main-font);
   font-size: var(--font-size);
+  line-height: 21px;
   margin-inline-start: 25px;
   margin-inline-end: 28px;
   margin-block-start: 25px;
@@ -410,8 +411,6 @@
 }
 
 .dialog-form {
-  width: 341px;
-  height: 191px;
   background-color: transparent;
   overflow: auto;
   border: none;
@@ -533,11 +532,6 @@
 
   .content-section__picture-atribute {
     right: 13px;
-  }
-
-  .dialog-form {
-    width: 357px;
-    height: 193px;
   }
   
   .dialog__content {
